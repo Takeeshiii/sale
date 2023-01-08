@@ -34,8 +34,7 @@ Route::get('/product_view','TopController@productView')->name('product');
 // 検索
 Auth::routes();
 
-Route::get('/product','TopController@serch')->name('serch');
-
+Route::get('/product_view','TopController@serch')->name('serch');
 
 // 削除
 Auth::routes();
