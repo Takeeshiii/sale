@@ -29,12 +29,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 // 商品一覧表示
 Auth::routes();
 
-Route::get('/product_view','TopController@productView')->name('product');
+Route::get('/product_view','TopController@view')->name('product');
 
 // 検索
 Auth::routes();
 
-Route::get('/product_view','TopController@serch')->name('serch');
+Route::get('/product_view','TopController@request')->name('request');
 
 // 削除
 Auth::routes();
