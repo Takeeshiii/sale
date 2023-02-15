@@ -18,10 +18,10 @@ class TopController extends Controller
     public function request(Request $request)
     {
         $keyword = $request->input('keyword');
-        $query = Sales::query();
+        $query = Product::query();
 
         if(!empty($keyword)) {
-            $query->where('title', 'LIKE', "%{$keyword}%")
+            $query->where('product_name', 'LIKE', "%{$keyword}%")
                 ->orWhere('author', 'LIKE', "%{$keyword}%");
         }
 
