@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class sales extends Model
+class Product extends Model
 {
-    public function getList(){
-
+    public function getlist()
+    {
         $product = DB::table('product')->get();
 
         return $product;
-}};
+    }
+}
